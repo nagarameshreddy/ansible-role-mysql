@@ -1,6 +1,6 @@
 # Ansible Role: MySQL
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-mysql.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-mysql)
+[![Build Status](https://travis-ci.org/yfix/ansible-role-mysql.svg?branch=master)](https://travis-ci.org/yfix/ansible-role-mysql)
 
 Installs and configures MySQL or MariaDB server on RHEL/CentOS or Debian/Ubuntu servers.
 
@@ -122,7 +122,7 @@ None.
       vars_files:
         - vars/main.yml
       roles:
-        - { role: geerlingguy.mysql }
+        - { role: yfix.mysql }
 
 *Inside `vars/main.yml`*:
 
@@ -136,11 +136,3 @@ None.
         host: "%"
         password: similarly-secure-password
         priv: "example_db.*:ALL"
-
-## License
-
-MIT / BSD
-
-## Author Information
-
-This role was created in 2014 by [Jeff Geerling](http://jeffgeerling.com/), author of [Ansible for DevOps](http://ansiblefordevops.com/).
